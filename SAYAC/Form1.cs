@@ -21,7 +21,7 @@ namespace SAYAC
         {
             int sayi;
             sayi = Convert.ToInt32(textBox1.Text);
-            sayi = sayi - 1;
+            sayi--;
             textBox1.Text = sayi.ToString();
         }
 
@@ -29,7 +29,23 @@ namespace SAYAC
         {
             int sayi;
             sayi = Convert.ToInt32(textBox1.Text);
-            sayi = sayi + 1;
+            sayi++;
+            textBox1.Text = sayi.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int sayi;
+            sayi = Convert.ToInt32(textBox1.Text);
+            sayi = sayi - 2;
+            textBox1.Text=sayi.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int sayi;
+            sayi= Convert.ToInt32(textBox1.Text);
+            sayi = sayi + 2;
             textBox1.Text = sayi.ToString();
         }
     }
